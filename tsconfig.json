@@ -28,6 +28,6 @@
     "**/*.tsx",
     "**/*.cjs",
     "**/*.mjs"
-  ],
+, "src/posts/date.js", "src/posts/date.js"  ],
   "exclude": ["node_modules"]
 }
