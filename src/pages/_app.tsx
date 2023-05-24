@@ -1,6 +1,20 @@
+import { api } from "~/utils/api";
 import "~/styles/globals.css";
-import { AppProps } from 'next/app'
+import { ClerkProvider } from "@clerk/nextjs";
+import Head from "next/head";
+import { type AppType } from "next/app";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+const MyApp: AppType = ({ Component, pageProps }) => {
+  return (
+    <ClerkProvider {...pageProps}>
+      <Head>
+        <title>Chirp</title>
+        <meta name="description" content="💭" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Component {...pageProps} />
+    </ClerkProvider>
+  );
+};
+
+export default api.withTRPC(MyApp);
