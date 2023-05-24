@@ -17,7 +17,7 @@ const Navbar = ({/*user: UseUserReturn*/}) => {
     return (
             <div className="navbar bg-base-200 h-5 min-w-full">
                 <div className="flex-1">
-                    <a className="btn-ghost btn text-xl normal-case" href="/">Fit Collector</a>
+                    {/* <a className="btn-ghost btn text-xl normal-case" href="/">Fit Collector</a> */}
                         </div>
                         <div className="flex-none gap-2">
                         <div className="form-control">
