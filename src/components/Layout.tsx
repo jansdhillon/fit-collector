@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Navbar from '~/components/Navbar';
 import Link from 'next/link';
-import Navbar from '~/components/navbar';
 
 const name = 'Jan'
 export const siteTitle = 'Fit Collector'
