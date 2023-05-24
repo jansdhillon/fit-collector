@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Navbar from '~/components/Navbar';
+// import Navbar from '~/components/Navbar';
 import Link from 'next/link';
 
 const name = 'Jan'
@@ -30,7 +30,7 @@ export default function Layout({
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <Navbar />
+      {/* <Navbar /> */}
       <header>
         {home ? (
           <div > 
